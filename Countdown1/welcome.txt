@@ -53,12 +53,21 @@ Sid Tickle
 Srikar Chittari
 Stephen "Steve" Laming: The boring life
 Steven Burke
-Taher "rehat" Calcuttawala My Memoir
-Teeratham Vitchutripop
-Thai-Phuc "Thai" Nguyen: Stay positive and test negative!
+<<<<<<< HEAD
 Taher Calcuttawala
 Teeratham "TJ" Vitchutripop: Wandering and Wondering
 Thai-Phuc Nguyen
+=======
+Taher "rehat" Calcuttawala My Memoir
+Teeratham Vitchutripop
+Thai-Phuc "Thai" Nguyen: Stay positive and test negative!
+<<<<<<< HEAD
+Taher Calcuttawala
+Teeratham "TJ" Vitchutripop: Wandering and Wondering
+Thai-Phuc Nguyen
+=======
+>>>>>>> ca9e6252168aef10e9f60f001f04b3bf8b09c0fe
+>>>>>>> e3878a2c2e16873284b984a96f349a384c40abfb
 Timothy Conner
 William Greig
 Yaseen Bhuiyan
