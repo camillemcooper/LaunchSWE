@@ -31,6 +31,12 @@ listBooks("author");
 /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
   number is positive or negative using a ternary operator (assume the number will never be zero) */
 
+const isPositive = (number) => number > 0 ? "The number is positive" : "The number is negative";
+
+console.log("\n");
+console.log(isPositive(1));
+console.log(isPositive(-1));
+
 /* (5) Write a switch statement for a 'day' variable that prints out something based off of what day of
   the week it is
   i.e. if it's Monday, print "good luck" or wednesday print "hump day" or friday print "party" */
