@@ -1,14 +1,14 @@
 The task you is to (1) put in "" in the middle of your name a nickname you go by and (2) after your name write the title of your memoir.
 ex/ Camille "Camy" Cooper: C is for Chaotic
 
-Abbey Yared
+Abbey "Abbey" Yared: Story of my Life
 Abby Rieck
 Abhir Karande
 Adriel "Andy" Kim: A is for awesome
 Andreas Damm
 Andrew "Andrew" Niu: A is for Apple
 Angela Gagin
-Arash Azizi
+Arash "Arash" Azizi: It's Easy as Azizi
 Arjun "Larry" Kumar: Arjun's Adventures
 Austin "Lane" Turner : A is for awesome
 Benjamin "Ben" Life: Thoughts on a Plane
@@ -19,7 +19,7 @@ Charles Glennon
 Christian Reyes
 Colin Buyck
 Connor Noble
-Cooper DeVito
+Cooper "Coop" DeVito: One odd kid.
 David Hasani
 Dhruv "dhruvbatra2" Batra <insert better name later>
 Ellis Nolan
@@ -28,7 +28,7 @@ Jacob Donovan
 Jacob Lovelace
 Jake "Mondo" Mondschein: Mondo's Memoir
 Jimmy "Jimmy" Njuguna: A Life of Exploring
-Josh Gong
+Josh "Josh" Gong: Memoir
 Julianna Hitchcock
 Justin Chen
 Justin Joo
@@ -45,10 +45,10 @@ Mihir "Mitchi" Prahlad: M is for Magical
 Mohamed Elgazar
 Myanh Le
 Nolan "Nolan" Harris: my favorite color is yellow
-Ronith Ranjan
+Ronith "Ronith" Ranjan: R is for Radical
 Rory "The Gamer" Gudka: The Guide to Epic Gaming
 Ryan "Ry" Grayson: Rated R
-Ryan "Ryan" Kim: My name is Ryan
+Ryan "Ry" Kim: The Life of Ry
 Sid Tickle
 Srikar Chittari
 Stephen "Steve" Laming: The boring life
@@ -59,6 +59,6 @@ Thai-Phuc "Thai" Nguyen: Stay positive and test negative!
 Timothy Conner
 William Greig
 Yaseen Bhuiyan
-Zachary Kim
+Zachary "Zach" Kim: One Day at a Time
 Zain Safavi
 William "TA" Helmrath: A Day in The Life
