@@ -8,7 +8,7 @@ Adriel "Andy" Kim: A is for awesome
 Andreas Damm
 Andrew "Andrew" Niu: A is for Apple
 Angela Gagin
-Arash Azizi
+Arash "Arash" Azizi: It's Easy as Azizi
 Arjun "Larry" Kumar: Arjun's Adventures
 Austin "Lane" Turner : A is for awesome
 Benjamin "Ben" Life: Thoughts on a Plane
@@ -43,25 +43,22 @@ Maggie Munday
 Meghna Singh
 Mihir "Mitchi" Prahlad: M is for Magical
 Mohamed Elgazar
-Myanh Le
+Myanh Le: Love Sleep
 Nolan "Nolan" Harris: my favorite color is yellow
 Ronith "Ronith" Ranjan: R is for Radical
 Rory "The Gamer" Gudka: The Guide to Epic Gaming
 Ryan "Ry" Grayson: Rated R
-Ryan "Ryan" Kim: My name is Ry
+Ryan "Ry" Kim: The Life of Ry
 Sid Tickle
 Srikar Chittari
 Stephen "Steve" Laming: The boring life
 Steven Burke
-<<<<<<< HEAD
 Taher "rehat" Calcuttawala My Memoir
 Teeratham Vitchutripop
 Thai-Phuc "Thai" Nguyen: Stay positive and test negative!
-=======
 Taher Calcuttawala
 Teeratham "TJ" Vitchutripop: Wandering and Wondering
 Thai-Phuc Nguyen
->>>>>>> activity1
 Timothy Conner
 William Greig
 Yaseen Bhuiyan
