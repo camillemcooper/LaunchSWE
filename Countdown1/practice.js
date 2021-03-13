@@ -171,9 +171,4 @@ const attendance = [
   ex/ [11, 6, 3, 5, 4], [19, 8, 5, 4] or [252, 18, 8, 5, 4]
   For context: https://puzzling.stackexchange.com/questions/29137/every-number-eventually-equals-4 */
 
-/* const everyNumIs4 = (num) => { 
-
-}
-*/
-
-//Newest attempt a
+//
