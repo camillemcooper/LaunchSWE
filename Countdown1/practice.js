@@ -5,12 +5,28 @@ Using the following array of objects,
 (2) Write an arrow function that removes a specific book from the bookList
 (3) Write an arrow function that lists out all the books or all the authors in the book list */
 
-const bookList = [
+let bookList = [
   { title: "Don Quixote", author: "Miguel de Cervantes" },
   { title: "Ulysses", author: "James Joyce" },
   { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
   { title: "Moby Dick", author: "Herman Melville" },
 ];
+
+// 1
+const addBook = (title, author) => bookList.push({title: title, author:author});
+
+// 2
+const removeBook = (title, author) => bookList = bookList.filter((book) => book.title != title && book.author != author);
+
+// 3
+const listBooks = (property) => bookList.forEach((book) => console.log(book[property]));
+
+// Tests
+addBook("To Kill a Mockingbird", "Harper Lee");
+removeBook("Ulysses", "James Joyce");
+listBooks("title");
+console.log("\n");
+listBooks("author");
 
 /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
   number is positive or negative using a ternary operator (assume the number will never be zero) */
