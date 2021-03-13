@@ -106,7 +106,7 @@ const tempConvert = (celsiusTemperature) => {
   } else if (fahrenheitTemperature < 80) {
     console.log("It's nice weather! Wear what you want.");
   } else {
-    console.log("It's hot! Wear shorts and short sleeves");
+    console.log("It's hot! Wear shorts and short sleeves.");
   }
 }
 
@@ -119,6 +119,17 @@ tempConvert(18);
   using .forEach() */
 
 const exampleArray = ["Hello, world!", 8, null, false, "", "0", -22];
+
+const countTruthy = (array) => {
+  count = 0;
+  for (let i = 0; i < array.length; i++) {
+    if(array[i]) count++;
+  }
+  return count;
+}
+
+console.log("\n");
+console.log(countTruthy(exampleArray));
 
 /* (9) Using the map function and arrow syntax, return an array of object that contain a fullName field
   and an averageGrade field representing the letter grade that corresponds to their GPA */
