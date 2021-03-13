@@ -41,6 +41,43 @@ console.log(isPositive(-1));
   the week it is
   i.e. if it's Monday, print "good luck" or wednesday print "hump day" or friday print "party" */
 
+dayStatement = (day) => {
+  switch (day) {
+    case "Monday":
+      console.log("good luck");
+      break;
+    case "Tuesday":
+      console.log("tough tuesday?");
+      break;
+    case "Wednesday":
+      console.log("hump day!");
+      break;
+    case "Thursday":
+      console.log("the day of Thor");
+      break;
+    case "Friday":
+      console.log("party");
+      break;
+    case "Saturday":
+      console.log("party again");
+      break;
+    case "Sunday":
+      console.log("sleep in");
+      break;
+    default:
+      console.log("that's not a day")
+  }
+}
+
+console.log("\n");
+dayStatement("Monday");
+dayStatement("Tuesday");
+dayStatement("Wednesday");
+dayStatement("Thursday");
+dayStatement("Friday");
+dayStatement("Saturday");
+dayStatement("Sunday");
+
 /* (6) Write an arrow function that takes in a number, and uses a for loop to return the sum of every
   number from 1 up to that number
   ex. sumUp(7) = 28 */
