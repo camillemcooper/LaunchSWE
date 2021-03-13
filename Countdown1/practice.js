@@ -82,6 +82,19 @@ dayStatement("Sunday");
   number from 1 up to that number
   ex. sumUp(7) = 28 */
 
+const sumUpTo = (number) => {
+  let sum = 0;
+  for (let i = 1; i <= number; i++) {
+      sum += i;
+  }
+  return sum;
+}
+
+console.log("\n");
+console.log(sumUpTo(7));
+console.log(sumUpTo(0));
+console.log(sumUpTo(10));
+
 /* (7) Write an arrow function that converts the temperature from Celsius to Fahrenheit and then tells
   me what I should wear accordingly */
 
