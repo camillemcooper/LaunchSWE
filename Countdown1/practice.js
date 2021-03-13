@@ -127,10 +127,45 @@ const attendance = [
 ];
 console.log(convertObj(attendance));
 
-const solveFour = (num) => {
-  let num2 = len
+const solveFour = (num, path) => {
+  path.push(num);
+  len3 = [1, 2, 6, 10]
+  len4 = [4, 5, 9]
+  len5 = [3, 7, 8, 40, 50, 60]
+  len6 = [11, 12, 20, 30, 80, 90]
+  len7 = [15, 16, 70, 100]
+  len8 = [13, 14, 18, 19, 41, 42, 46, 51, 52, 56, 61, 62, 66]
+  len9 = [17, 21, 22, 26, 31, 32, 36, 44, 45, 49, 54, 55, 59, 64, 65, 69, 81, 82, 86, 91, 92, 96]
+  len10 = [24, 25, 29, 34, 35, 39, 43, 47, 48, 53, 57, 58, 63, 67, 68, 71, 72, 76, 84, 85, 89, 94, 95, 99]
+  len11 = [23, 27, 28, 33, 37, 38, 74, 75, 79, 83, 87, 88, 93, 97, 98]
+  len12 = [73, 77, 78]
+
+
+  lenlist = [len3, len4, len5, len6, len7, len8, len9, len10, len11, len12]
+
+  let newnum = 0;
+  for(i = 0; i < lenlist.length; i++) {
+    if (lenlist[i].includes(num)) {
+      newnum = i+3;
+      // path.push(newnum)
+      break;
+    }
+  }
+  
+  if (newnum == 4) {
+    if (!path.includes(4))
+      path.push(4);
+    return path;
+  }
+  else
+    return solveFour(newnum, path);
+  
+  
+  
 }
+console.log(solveFour(19, []));
 /* (10) Write a function that solves the "every number eventually equals 4" puzzle. The output should be
   an array of the path you took to make it equal four
   ex/ [11, 6, 3, 5, 4], [19, 8, 5, 4] or [252, 18, 8, 5, 4]
   For context: https://puzzling.stackexchange.com/questions/29137/every-number-eventually-equals-4 */
+
