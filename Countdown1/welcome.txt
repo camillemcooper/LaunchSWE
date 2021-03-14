@@ -22,7 +22,11 @@ Connor Noble
 Cooper DeVito
 David Hasani
 Dhruv "dhruvbatra2" Batra <insert better name later>
+<<<<<<< HEAD
 Ellis Nolan: To find a port, we must set sail.
+=======
+Ellis Nolan: Pizza!
+>>>>>>> 2603f74c73d21df2e842788b47f45e30311c654c
 Hudson Burke
 Jacob Donovan
 Jacob Lovelace
