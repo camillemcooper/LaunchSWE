@@ -144,6 +144,30 @@ const attendance = [
   { firstName: "Jared", lastName: "Nguyen", gpa: 4.0 },
 ];
 
+const convertAttendance = (student) => {
+  let newInfo = {};
+  newInfo.fullName = student.firstName + " " + student.lastName;
+  //console.log(newInfo);
+  if (student.gpa >= 3.7) {
+    newInfo.grade = 'A';
+  } else if (student.gpa >= 2.7) {
+    newInfo.grade = 'B';
+  } else if (student.gpa >= 1.7) {
+    newInfo.grade = 'C';
+  } else if (student.gpa >= 0.7) {
+    newInfo.grade = 'D';
+  } else {
+    newInfo.grade = 'F';
+  }
+  return newInfo;
+}
+
+console.log("\n");
+const newAttenance = attendance.map(convertAttendance);
+for (let i in newAttenance) {
+  console.log(JSON.stringify(newAttenance[i]));
+}
+
 /* (10) Write a function that solves the "every number eventually equals 4" puzzle. The output should be
   an array of the path you took to make it equal four
   ex/ [11, 6, 3, 5, 4], [19, 8, 5, 4] or [252, 18, 8, 5, 4]
