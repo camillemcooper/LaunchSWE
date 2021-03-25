@@ -172,3 +172,72 @@ for (let i in newAttenance) {
   an array of the path you took to make it equal four
   ex/ [11, 6, 3, 5, 4], [19, 8, 5, 4] or [252, 18, 8, 5, 4]
   For context: https://puzzling.stackexchange.com/questions/29137/every-number-eventually-equals-4 */
+
+const units = {
+    1: "one",
+    2: "two",
+    3: "three",
+    4: "four",
+    5: "five",
+    6: "six",
+    7: "seven",
+    8: "eight",
+    9: "nine",
+    10: "ten",
+    11: "eleven",
+    12: "twelve",
+    13: "thirteen",
+    14: "fourteen",
+    15: "fifteen",
+    16: "sixteen",
+    17: "seventeen",
+    18: "eighteen",
+    19: "ninetten"
+  }
+const tens = {
+  20: "twenty",
+  30: "thirty",
+  40: "fourty",
+  50: "fifty",
+  60: "sixty",
+  70: "seventy",
+  80: "eighty",
+  90: "ninty"
+}
+
+const numToString = (num) => {
+  if (num <= 0 || num > 9999) return "Input out of bounds (1-9999)";
+  let numString = "";
+  if (num > 999) {
+    const thousandDigit = Math.floor((num / 1000));
+    numString += units[thousandDigit] + "thousand";
+    num = num % 1000;
+  }
+  if (num > 99) {
+    const hundredDigit = Math.floor((num / 100));
+    numString += units[hundredDigit] + "hundred";
+    num = num % 100;
+  }
+  if (num > 19) {
+    const tensDigit = Math.floor((num / 10));
+    numString += tens[tensDigit * 10];
+    num = num % 10;
+  }
+  numString += units[num];
+  return numString;
+}
+
+const fourPuzzle = (num) => {
+  let path = [num];
+  while (path[path.length - 1] !== 4) {
+    const numString = numToString(num);
+    num = numString.length;
+    path.push(num);
+  }
+  return path;
+}
+
+console.log("\n");
+console.log(JSON.stringify(fourPuzzle(4)));
+console.log(JSON.stringify(fourPuzzle(8)));
+console.log(JSON.stringify(fourPuzzle(2947)));
