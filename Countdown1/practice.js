@@ -12,6 +12,12 @@ const bookList = [
   { title: "Moby Dick", author: "Herman Melville" },
 ];
 
+const addEntry = (title,author) => {
+
+
+} 
+console.log(bookList)
+
 /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
   number is positive or negative using a ternary operator (assume the number will never be zero) */
 
