@@ -96,7 +96,6 @@ const truth = (arr) => {
   arr.forEach(element => (element ? count++ : count+=0))
   return count;
 }
-console.log(truth(exampleArray));
 
 /* (9) Using the map function and arrow syntax, return an array of object that contain a fullName field
   and an averageGrade field representing the letter grade that corresponds to their GPA */
@@ -111,6 +110,22 @@ const attendance = [
   { firstName: "Jared", lastName: "Nguyen", gpa: 4.0 },
 ];
 
+const newArray = attendance.map((student) => {
+  const fullName = student.firstName + " " + student.lastName;
+  let averageGrade;
+  if (student.gpa >= 4) averageGrade="A";
+  else if (student.gpa >= 3.7) averageGrade="B+";
+  else if (student.gpa >= 3.3) averageGrade="B";
+  else if (student.gpa >= 3) averageGrade="B-";
+  else if (student.gpa >= 2.7) averageGrade="C+";
+  else if (student.gpa >= 2.3) averageGrade="C";
+  else if (student.gpa >= 2) averageGrade="C-";
+  else averageGrade="Failing grade";
+
+  return {fullName, averageGrade}
+})
+console.log(newArray)
+
 
 /* (10) Write a function that solves the "every number eventually equals 4" puzzle. The output should be
   an array of the path you took to make it equal four
@@ -124,22 +139,19 @@ const attendance = [
       if ((num = num.toString()).length > 9) return 'overflow';
       n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
       if (!n) return; var str = '';
-      str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
-      str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
-      str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
-      str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
-      str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) : '';
+      str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + a[n[1][1]]) + 'crore ' : '';
+      str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + a[n[2][1]]) + 'lakh ' : '';
+      str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + a[n[3][1]]) + 'thousand ' : '';
+      str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + a[n[4][1]]) + 'hundred ' : '';
+      str += (n[5] != 0) ? ((str != '') ? '' : '') + (a[Number(n[5])] || b[n[5][0]] + '-' + a[n[5][1]]) : '';
       return str;
   }
 
 const arr = [];
-
 const everyNumEqualsFour = (input) => {
   arr.push(input);
-  let letters = inWords(input).length;
-  console.log(letters);
-  // return (everyNumEqualsFour(output))
+  let letters = inWords(input).length-1;
+  //  base case
+  if (inWords(input) === "four" | inWords(input) === "four ") {return}
+  return (everyNumEqualsFour(letters))
 }
-let test = 4;
-// inWords(4);
-// everyNumEqualsFour(4);
