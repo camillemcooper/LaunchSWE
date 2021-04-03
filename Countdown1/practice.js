@@ -13,13 +13,15 @@ const bookList = [
 ];
 
 let addBook = (newTitle, newAuthor) => bookList.push(book ={title: newTitle, author: newAuthor})
+addBook("Life","Zach")
 console.log(bookList)
 let removeBook = (Title, Author) => bookList.filter(book => book.title != Title)
 let printList = bookList.forEach(book => console.log(book))
 /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
   number is positive or negative using a ternary operator (assume the number will never be zero) */
-  let odd = ((num) (num%2 == 0) ? "Even" : "odd")
-/* (5) Write a switch statement for a 'day' variable that prints out something based off of what day of
+  const posOrNeg = (input) => input > 0 ? "positive" : "negative";
+  
+  /* (5) Write a switch statement for a 'day' variable that prints out something based off of what day of
   the week it is
   i.e. if it's Monday, print "good luck" or wednesday print "hump day" or friday print "party" */
   switch(day){
@@ -48,7 +50,7 @@ let printList = bookList.forEach(book => console.log(book))
 /* (6) Write an arrow function that takes in a number, and uses a for loop to return the sum of every
   number from 1 up to that number
   ex. sumUp(7) = 28 */
-  let sum = (num) => {
+  let sumUp = (num) => {
     let sum = 0;
     for(i = 0; i <= num; i++){
       sum += i;
@@ -70,6 +72,7 @@ let printList = bookList.forEach(book => console.log(book))
   using .forEach() */
 
 const exampleArray = ["Hello, world!", 8, null, false, "", "0", -22];
+
 function isTruth (arr){
   arr.forEach(element => truthy(element));
   console.log(truth);
