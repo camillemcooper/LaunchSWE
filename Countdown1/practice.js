@@ -142,4 +142,4 @@ const everyNumEqualsFour = (input) => {
 }
 let test = 4;
 // inWords(4);
-everyNumEqualsFour(4);
+// everyNumEqualsFour(4);
