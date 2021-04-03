@@ -69,19 +69,19 @@ const temperature = (celsius) => {
     console.log("Wear thick layers! Brrr!");
   }
   
-  if (fahrenheit < 50){
+  else if (fahrenheit < 50){
     console.log("Wear a sweater!");
   }
   
-  if (fahrenheit < 60) {
+  else if (fahrenheit < 60) {
     console.log("Wear a longsleeved shirt.");
   }
   
-  if (fahrenheit < 90) {
+  else if (fahrenheit < 90) {
     console.log("Wear a t-shirt.");
   }
   
-  if (fahrenheit > 90) {
+  else if (fahrenheit > 90) {
     console.log("It's too hot!");
   }
 }; // problem 7
@@ -110,14 +110,73 @@ const attendance = [
 
 attendance.map((person) => (
   <fullName key = {person.lastName} value = {person.firstname + " " + person.lastname}>
-    {person.lastname + " " + person.lastname}
+    {person.firstname + " " + person.lastname}
   </fullName>
   
   <averageGrade key = {person.lastName} value = {person.gpa}>
-  {pe
+    if(person.gpa === 4.0){
+      {"A"}};
+    else if (person.gpa >= 3.7){
+      {"A-"}};
+    else if (person.gpa >= 3.3){
+      {"B+"}};
+    else if (person.gpa >= 3.0{
+      {"B"}};
+    else if (person.gpa >= 2.7){
+      {"B-"}};
+    else if (person.gpa >= 2.3){
+      {"C+"}};
+    else if (person.gpa >= 2.0){
+      {"C"}};
+    else if (person.gpa >= 1.7){
+      {"C-"}};
+    else if (person.gpa >= 1.3){
+      {"D+"}};
+    else if (person.gpa >= 1.0){
+      {"D"}};
+    else {
+      {"F"}};
+  
+}
+  </averageGrade>
   ))}
 
 /* (10) Write a function that solves the "every number eventually equals 4" puzzle. The output should be
   an array of the path you took to make it equal four
   ex/ [11, 6, 3, 5, 4], [19, 8, 5, 4] or [252, 18, 8, 5, 4]
   For context: https://puzzling.stackexchange.com/questions/29137/every-number-eventually-equals-4 */
+  
+// Needed a number-to-words converter, so found this here: https://www.thoughtco.com/how-to-convert-numbers-to-words-with-javascript-4072535
+// Convert numbers to words
+// copyright 25th July 2006, by Stephen Chapman http://javascript.about.com
+// permission to use this Javascript on your web page is granted
+// provided that all of the code (including this copyright notice) is
+// used exactly as shown (you can change the numbering system if you wish)
+
+// American Numbering System
+var th = ['','thousand','million', 'billion','trillion'];
+// uncomment this line for English Number System
+// var th = ['','thousand','million', 'milliard','billion'];
+
+var dg = ['zero','one','two','three','four',
+'five','six','seven','eight','nine']; var tn =
+['ten','eleven','twelve','thirteen', 'fourteen','fifteen','sixteen',
+'seventeen','eighteen','nineteen']; var tw = ['twenty','thirty','forty','fifty',
+'sixty','seventy','eighty','ninety']; function toWords(s){s = s.toString(); s =
+s.replace(/[\, ]/g,''); if (s != parseFloat(s)) return 'not a number'; var x =
+s.indexOf('.'); if (x == -1) x = s.length; if (x > 15) return 'too big'; var n =
+s.split(''); var str = ''; var sk = 0; for (var i=0; i < x; i++) {if
+((x-i)%3==2) {if (n[i] == '1') {str += tn[Number(n[i+1])] + ' '; i++; sk=1;}
+else if (n[i]!=0) {str += tw[n[i]-2] + ' ';sk=1;}} else if (n[i]!=0) {str +=
+dg[n[i]] +' '; if ((x-i)%3==0) str += 'hundred ';sk=1;} if ((x-i)%3==1) {if (sk)
+str += th[(x-i-1)/3] + ' ';sk=0;}} if (x != s.length) {var y = s.length; str +=
+'point '; for (var i=x+1; istr.replace(/\s+/g,' ');}
+  
+  const eqFour = (num) => {
+    let result = [];
+    while (num != 4){
+      let words = toWords(num);
+      num = words.length;
+      result.push(num);
+    }
+  }
