@@ -104,6 +104,20 @@ displayBooks('author');
   using .forEach() */
 
 const exampleArray = ["Hello, world!", 8, null, false, "", "0", -22];
+function numTruthy(array) {
+  let sum = 0;
+  array.forEach((value) => {
+      if (value) { sum += 1; }
+    })
+  return sum;
+}
+
+const exampleArray2 = ["h", "a", "p", "p", "y"];
+const exampleArray3 = [null, null, false, "Happy", false]
+
+console.log(numTruthy(exampleArray));
+console.log(numTruthy(exampleArray2));
+console.log(numTruthy(exampleArray3));
 
 /*
 function numTruthy(array) {
@@ -123,7 +137,38 @@ const attendance = [
   { firstName: "Jared", lastName: "Nguyen", gpa: 4.0 },
 ];
 
+
+  const newArray = attendance.map((name) => {
+    let fullName = name.firstName + " " + name.lastName;
+    let averageGrade = "";
+    if (name.gpa > 3.3) {averageGrade = "A";}
+    else if (name.gpa > 2.3) {averageGrade = "B";}
+    else if (name.gpa > 1.3) {averageGrade = "C";}
+    else if (name.gpa > 0) {averageGrade = "D";}
+    else {averageGrade = "F";}
+    return {fullName, averageGrade};
+  })
+  
+  console.log(newArray);
+
+
 /* (10) Write a function that solves the "every number eventually equals 4" puzzle. The output should be
   an array of the path you took to make it equal four
   ex/ [11, 6, 3, 5, 4], [19, 8, 5, 4] or [252, 18, 8, 5, 4]
   For context: https://puzzling.stackexchange.com/questions/29137/every-number-eventually-equals-4 */
+
+  function everyNumEquals4(number) {
+    const ones = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    const tens = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+    const greaterTens = ["ignore", "ignore", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+
+    let path = []
+    let length = 0;
+    if (number === 100) {
+      path.push(number);
+    }
+    else if (number > 19) {
+      const word = number.toString();
+      greaterTens[parseInt(word[0])]
+    }
+  }
