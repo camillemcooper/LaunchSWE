@@ -24,13 +24,8 @@ Brittany Sandoval-Rivera
 Charles Glennon
 Christian "Chris" Reyes: Untitled
 Colin Buyck
-<<<<<<< HEAD
-Connor "Connor" Noble: My Life
-Cooper DeVito
-=======
 Connor "Connor" Noble: My Memoir
 Cooper "Coop" DeVito: One odd kid.
->>>>>>> 0a6b63f74fce4a6626413ee28a200f3d28a6c2d0
 David Hasani
 Dhruv "dhruvbatra2" Batra <insert better name later>
 Ellis "Ellis" Nolan: Pizza!
